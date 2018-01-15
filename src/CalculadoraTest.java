@@ -21,4 +21,13 @@ public class CalculadoraTest {
 		assertFalse(Calculadora.esPar(5));
 	}
 
+	
+	@Test
+	public void ValorarCocheTest(){
+		Coche audi = new Coche();
+		audi.setKilometraje(20000);
+		audi.setPrecioCompra(100000);
+		assertNotNull(audi.valorar());
+	}
+
 }

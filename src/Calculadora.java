@@ -3,6 +3,7 @@ public class Calculadora {
 	
 	private int lado;
 	private String figura;
+	private int radio;
 	
 	
 
@@ -26,6 +27,8 @@ public class Calculadora {
 		int area = 0;
 		if(figura == "Cuadrado"){
 			area = lado * lado;
+		}
+		if(figura == "Circulo"){
 		}
 		return area;
 	}
