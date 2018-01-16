@@ -1,11 +1,13 @@
 import static org.junit.Assert.*;
 
+import java.util.ArrayList;
+
 import org.junit.Test;
 
 public class CalculadoraTest {
 
 	@Test
-	public void CalcularAreaTest() {
+	public void calcularAreaTest() {
 		int area = Calculadora.CalcularArea(11, "Cuadrado");
 		int area_esperada = 121;
 		assertEquals(area, area_esperada);
@@ -23,11 +25,25 @@ public class CalculadoraTest {
 
 	
 	@Test
-	public void ValorarCocheTest(){
+	public void valorarCocheTest(){
 		Coche audi = new Coche();
 		audi.setKilometraje(20000);
 		audi.setPrecioCompra(100000);
 		assertNotNull(audi.valorar());
+	}
+	
+	@Test
+	public void nombreActuacionTest(){
+		
+		Actuacion u2 = new Actuacion();
+		
+		assertNull(u2.getNombreGrupo());
+		
+	}
+	
+	@Test
+	public void mismoCocheTest(){
+		
 	}
 
 }
