@@ -1,35 +1,9 @@
 
 public class Calculadora {
-	
-	private int lado;
-	private String figura;
-	private int radio;
-	
-	
 
-	public int getLado() {
-		return lado;
-	}
-
-	public void setLado(int lado) {
-		this.lado = lado;
-	}
-
-	public String getFigura() {
-		return figura;
-	}
-
-	public void setFigura(String figura) {
-		this.figura = figura;
-	}
-
-	public static int CalcularArea(int lado, String figura){
-		int area = 0;
-		if(figura == "Cuadrado"){
-			area = lado * lado;
-		}
-		if(figura == "Circulo"){
-		}
+	public static int CalcularAreaCuadrado(int lado){
+		
+		int area = lado * lado;		
 		return area;
 	}
 	

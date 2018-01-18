@@ -8,7 +8,7 @@ public class CalculadoraTest {
 
 	@Test
 	public void calcularAreaTest() {
-		int area = Calculadora.CalcularArea(11, "Cuadrado");
+		int area = Calculadora.CalcularAreaCuadrado(11);
 		int area_esperada = 121;
 		assertEquals(area, area_esperada);
 	}
@@ -42,8 +42,24 @@ public class CalculadoraTest {
 	}
 	
 	@Test
-	public void mismoCocheTest(){
+	public void mismoColorCocheTest(){
+		Coche audi = new Coche();
+		audi.setColor("rojo");
+		Coche bmw = new Coche();
+		bmw.setColor("rojo");
 		
+		assertSame(audi.getColor(),bmw.getColor());
+		
+	}
+	
+	@Test
+	public void numPlazasDiferentesTest(){
+		Coche audi = new Coche();
+		audi.setNum_plazas(5);
+		Coche bmw = new Coche();
+		bmw.setNum_plazas(7);
+		
+		assertNotSame(audi.getNum_plazas(), bmw.getNum_plazas());
 	}
 
 }

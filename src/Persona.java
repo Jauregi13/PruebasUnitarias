@@ -130,8 +130,8 @@ public class Persona {
 	 * @param peso
 	 *            en cuanto se va a cambiar el peso
 	 */
-	public void engordar(int peso) {
-		this.peso = this.peso + peso;
+	public double engordar(int peso) {
+		return (this.peso = this.peso + peso);
 	}
 
 	public void cumplirAnio() {
